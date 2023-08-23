@@ -7,11 +7,19 @@
 </lu>
 
 ## Capturas de Pantalla
-![Principal_1](fotos-proyecto/screenshot1.png)
-![Principal_2](fotos-proyecto/screenshot2.png)
-![Principal_3](fotos-proyecto/screenshot3.png)
-![Principal_4](fotos-proyecto/screenshot4.png)
-![Principal_5](fotos-proyecto/screenshot5.png)
+Inicio pagína:
+
+![Principal_1](fotos-proyecto/Screenshot1.png)
+![Principal_2](fotos-proyecto/Screenshot2.png)
+
+Selección Provincia:
+
+![Principal_3](fotos-proyecto/Screenshot3.png)
+![Principal_4](fotos-proyecto/Screenshot4.png)
+
+Selección Sector:
+
+![Principal_5](fotos-proyecto/Screenshot5.png)
 
 ## Tecnologías
 
