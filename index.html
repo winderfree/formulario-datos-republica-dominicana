@@ -9,49 +9,53 @@
   <p>Inserta dirección de renta?:</p>
   <form >
     <label for="city">Ciudad:</label>
-    <select onclick="getId()" id="city" name="city"></select>
+    <select onchange="getId()" id="city" name="city"></select>
     <label for="municipio">Municipio:</label>
-    <select onclick="getId()" id="municipio" name="municipio"></select>
+    <select onclick="getIdSector()" id="municipio" name="municipio"></select>
     <label for="sector">Sector:</label>
     <select id="sector" name="sector"></select>
     
     <script>
+      function getIdSector(){
+        const idMunicipio = document.getElementById('municipio').value;
+        console.log(idMunicipio);
+        const SECTOR_DATA = './JSON/sectores.json';
+        const selectSectores = document.querySelector("#sector");
+        
+        fetch(SECTOR_DATA)
+          .then((response) => response.json())
+          .then((sectores) => {
+            const HTMLResponseSector = sectores.map((element, x) => 
+            (element.municipio_id == idMunicipio 
+            ?
+            '<option value='+element.municipio_id+' id='+element.provincia_id+' >'+element.sector+'</option>'
+            :
+            '')
+          );
+          selectSectores.innerHTML = HTMLResponseSector;
+            console.log(HTMLResponseSector);
+          });   
+      }
+    
       function getId(){
-        let idProvincia = document.getElementById('municipio').value;
-        let idCiudad = document.getElementById('city').value;
-        console.log('<option value='+idCiudad+'>'+idCiudad+'</option>');
+        const idCiudad = document.getElementById('city').value;
+        console.log(idCiudad);
         const MUNI_DATA = './JSON/municipios.json';
         const selectMunicipios = document.querySelector("#municipio");
         
         fetch(MUNI_DATA)
           .then((response) => response.json())
           .then((municipios) => {
-            const HTMLResponseMuni = municipios.map((element, x) =>
-            element.provincia_id == idCiudad
+            const HTMLResponseMuni = municipios.map((element, x) => 
+            (element.provincia_id == idCiudad 
             ?
-            '<option value='+element.municipio_id+' id='+idCiudad+' >'+element.municipio+'</option>'
-           :
-           ''
-            );
+            '<option value='+element.municipio_id+' id='+element.provincia_id+' >'+element.municipio+'</option>'
+            :
+            '')
+          );
             selectMunicipios.innerHTML = HTMLResponseMuni;
             console.log(HTMLResponseMuni);
           });   
-
-        const SECTOR_DATA = './JSON/sectores.json';
-        const selectSectores = document.querySelector("#sector");
-        fetch(SECTOR_DATA)
-          .then((response) => response.json())
-          .then((sectores) => {
-            const HTMLResponseSector = sectores.map((element, x) =>
-            element.municipio_id == idProvincia
-            ?
-            '<option value='+element.municipio_id+' id='+idCiudad+' >'+element.sector+'</option>'
-           :
-           ''
-          );
-          selectSectores.innerHTML = HTMLResponseSector;
-          console.log(HTMLResponseSector);
-        }); 
       }
       const PROVI_DATA = './JSON/provincias.json';
       const select = document.querySelector("#city");
@@ -63,12 +67,6 @@
           select.innerHTML = HTMLResponseProvi;
           console.log(HTMLResponseProvi);
         }); 
-    
-      
-      
-    /*
-      
-          */
     </script>
     <br>
     <br>
