@@ -31,4 +31,4 @@ Esta página web fue creada con:
 
 ## Proyecto en vivo
 
-Puedes acceder al proyecto en vivo en: https://winderfree.github.io/formulario-datos-republica-dominicanad/
+Puedes acceder al proyecto en vivo en: https://winderfree.github.io/formulario-datos-republica-dominicana/
