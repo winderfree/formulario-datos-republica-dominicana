@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario-direccion</title>
+    <style>
+      .select-hidden {
+        display: none;
+      }
+      .select-visible {
+        display:inline;
+      }
+    </style>
 </head>
 <body>
-  <p>Inserta dirección de renta?:</p>
+  <p>Inserta dirección:</p>
   <form >
-    <label for="city">Ciudad:</label>
-    <select onclick="getId()" id="city" name="city"></select>
-    <label for="municipio">Municipio:</label>
-    <select onclick="getIdSector()" id="municipio" name="municipio"></select>
-    <label for="sector">Sector:</label>
-    <select id="sector" name="sector"></select>
-    <button type="button" onclick="getId()">Summit</button>
+    <label for="city">Dirección:</label>
+    <select onchange="getId()" id="city" name="city" ></select>
+    <!--<label for="municipio">Municipio:</label>-->
+    <select class="select-hidden" onchange="getIdSector()" id="municipio" name="municipio"></select>
+    <!--<label for="sector">Sector:</label>-->
+    <select class="select-hidden" id="sector" name="sector"></select>
+    <button type="button" onclick="">Summit</button>
   </form>
     <script>
       function getIdSector(){
@@ -33,6 +41,7 @@
             :
             '')
           );
+          selectSectores.className = "select-visible";
           selectSectores.innerHTML = HTMLResponseSector;
             console.log(HTMLResponseSector);
           });   
@@ -54,19 +63,25 @@
             :
             '')
           );
-            selectMunicipios.innerHTML = HTMLResponseMuni;
-            console.log(HTMLResponseMuni);
+          selectMunicipios.className = "select-visible";
+          selectMunicipios.innerHTML = "<option>--- Inserta Municipio ---</option>";
+          selectMunicipios.innerHTML += HTMLResponseMuni;
+          console.log(HTMLResponseMuni);
           });   
       }
+
       const PROVI_DATA = './JSON/provincias.json';
       const select = document.querySelector("#city");
+
       fetch(PROVI_DATA)
         .then((response) => response.json())
         .then((provincias) => {
           const HTMLResponseProvi = provincias.map((element, x) =>
           '<option value='+element.provincia_id+' id='+element.provincia_id+' >'+element.provincia+'</option>' );
-          select.innerHTML = HTMLResponseProvi;
-          console.log(HTMLResponseProvi);
+          select.className = "select-visible";
+          select.innerHTML = "<option>--- Inserta Ciudad ---</option>";
+          select.innerHTML += HTMLResponseProvi;
+          console.log(select);
         }); 
     </script>
     <br>
