@@ -1,5 +1,5 @@
 # formulario-datos-republica-dominicana(RD)
-<lu><h1>Sobre</h1>
+<lu><h1>ReadMe.</h1>
 <li>direccion-dominicana-rd</li>
 <li>"Este formulario permite tener una busque da precisa sobre Provincias, Municipios y Sectores."
     "This form allows you to have a precise search on Provinces, Municipalities and Sectors."
@@ -31,4 +31,4 @@ Esta página web fue creada con:
 
 ## Proyecto en vivo
 
-Puedes acceder al proyecto en vivo en: https://winderfree.github.io/formulario-datos-republica-dominicanad/
+Puedes acceder al proyecto en vivo en: https://winderfree.github.io/formulario-datos-republica-dominicana/
