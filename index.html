@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario-direccion</title>
+    <title>Visita República Dominicana.</title>
     <style>
       .select-hidden {
         display: none;
@@ -14,33 +14,49 @@
     </style>
 </head>
 <body>
-  <p>Inserta dirección:</p>
+  <h1 style="opacity: 100%; border-style: none; background-image: url('./fotos-proyecto/bandera-r-d.png'); background-repeat: no-repeat; height:120px; width:70%;">
+    <span style="opacity: 75%;">Visita</span>
+    <br>
+    <span style="opacity: 75%; color:blue;">República</span>
+    <br> 
+    <span style="opacity: 75%; color:red;">Dominicana.</span>
+  </h1>
   <form >
-    <label for="city">Dirección:</label>
-    <select onchange="getId()" id="city" name="city" ></select>
-    <!--<label for="municipio">Municipio:</label>-->
-    <select class="select-hidden" onchange="getIdSector()" id="municipio" name="municipio"></select>
-    <!--<label for="sector">Sector:</label>-->
-    <select class="select-hidden" id="sector" name="sector"></select>
-    <button type="button" onclick="">Summit</button>
+    <fieldset >
+      <legend style="font-size: 26px;">Buscar:</legend>
+      <!--<label for="city">Dirección:</label>-->
+      <select onchange="getId()" id="city" name="city" required ></select>
+      <!--<label for="municipio">Municipio:</label>-->
+      <select class="select-hidden" onchange="getIdSector()" id="municipio" name="municipio" required></select>
+      <!--<label for="sector">Sector:</label>-->
+      <select class="select-hidden" id="sector" name="sector"></select>
+      <button class="select-hidden" id="boton-ir" type="submit" onclick="alert('Up to YOU!')">Ir</button>
+     
+  </fieldset>
+  <div id="descripcion-direccion"></div>
+
   </form>
+  
     <script>
+     
       function getIdSector(){
         const idMunicipio = document.getElementById('municipio').value;
         console.log(idMunicipio);
         const SECTOR_DATA = './JSON/sectores.json';
         const selectSectores = document.querySelector("#sector");
-        
+        const dir = document.querySelector("#descripcion-direccion")
+        const ir = document.querySelector("#boton-ir");
         fetch(SECTOR_DATA)
           .then((response) => response.json())
           .then((sectores) => {
             const HTMLResponseSector = sectores.map((element, x) => 
-            (element.municipio_id == idMunicipio 
+            (element.municipio_id == idMunicipio)
             ?
-            '<option value='+element.municipio_id+' id='+element.provincia_id+' >'+element.sector+'</option>'
+            '<option name= '+element.sector+' id='+element.provincia_id+' >'+element.sector+'</option>'
             :
-            '')
+            ''
           );
+          ir.className = "select-visible";
           selectSectores.className = "select-visible";
           selectSectores.innerHTML = HTMLResponseSector;
             console.log(HTMLResponseSector);
@@ -59,29 +75,53 @@
             const HTMLResponseMuni = municipios.map((element, x) => 
             (element.provincia_id == idCiudad 
             ?
-            '<option value='+element.municipio_id+' id='+element.provincia_id+' >'+element.municipio+'</option>'
+            '<option name='+element.municipio+' value='+element.municipio_id+' >'+element.municipio+'</option>'
             :
             '')
           );
+
           selectMunicipios.className = "select-visible";
-          selectMunicipios.innerHTML = "<option>--- Inserta Municipio ---</option>";
+          selectMunicipios.innerHTML = "<option value='' disabled selected hidden>--- Elige Municipio ---</option>";
           selectMunicipios.innerHTML += HTMLResponseMuni;
+
           console.log(HTMLResponseMuni);
-          });   
+          });  
+        
+        const PROVI_DATA = './JSON/provincias.json';
+        const foto = document.querySelector("#imagen-provincia")
+        const dir = document.querySelector("#descripcion-direccion")
+
+        fetch(PROVI_DATA)
+          .then((response) => response.json())
+          .then((provincias) => {
+            const HTMLResponseMuni = provincias.map((element, x) => 
+            (element.provincia_id == idCiudad )
+            ?
+            dir.innerHTML = element.provincia+
+            '<img src="./fotos-proyecto/fotos-provincias/'+element.foto+'" alt="foto" height="50%" width="100%" />'
+            :
+            ''
+          );
+            dir.className = "select-visible";
+          myArrayClean = HTMLResponseMuni.filter(Boolean);
+          console.log(myArrayClean);
+          foto.innerHTML =  myArrayClean;
+        });  
       }
 
       const PROVI_DATA = './JSON/provincias.json';
       const select = document.querySelector("#city");
-
+      const foto = document.querySelector("#imagen-provincia")
       fetch(PROVI_DATA)
         .then((response) => response.json())
         .then((provincias) => {
           const HTMLResponseProvi = provincias.map((element, x) =>
+          console.log(element.foto)+
           '<option value='+element.provincia_id+' id='+element.provincia_id+' >'+element.provincia+'</option>' );
           select.className = "select-visible";
-          select.innerHTML = "<option>--- Inserta Ciudad ---</option>";
+          select.innerHTML = "<option value='' disabled selected hidden>--- Elige Provincia ---</option>";
           select.innerHTML += HTMLResponseProvi;
-          console.log(select);
+          console.log(select); 
         }); 
     </script>
     <br>
@@ -97,7 +137,5 @@
       <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
     <br>
     -->
-      
-
 </body>
 </html>

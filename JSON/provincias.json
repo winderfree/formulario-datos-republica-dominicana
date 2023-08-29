@@ -1,130 +1,162 @@
 [
 	{
 		"provincia_id" : 1,
-		"provincia" : "Distrito Nacional"
+		"provincia" : "Distrito Nacional",
+		"foto" : "distrito-nacional.png"
 	},
 	{
 		"provincia_id" : 2,
-		"provincia" : "Santo Domingo"
+		"provincia" : "Santo Domingo",
+		"foto" : "santo-domingo.png"
 	},
 	{
 		"provincia_id" : 21,
-		"provincia" : "San Pedro de Macorís"
+		"provincia" : "San Pedro de Macorís",
+		"foto" : "san-pedro-de-macoris.png"
 	},
 	{
 		"provincia_id" : 22,
-		"provincia" : "La Romana"
+		"provincia" : "La Romana",
+		"foto" : "la-romana.png"
 	},
 	{
 		"provincia_id" : 23,
-		"provincia" : "La Altagracia"
+		"provincia" : "La Altagracia",
+		"foto" : "la-altagracia.png"
 	},
 	{
 		"provincia_id" : 24,
-		"provincia" : "El Seibo"
+		"provincia" : "El Seibo",
+		"foto" : "el-seibo.png"
 	},
 	{
 		"provincia_id" : 25,
-		"provincia" : "Hato Mayor"
+		"provincia" : "Hato Mayor",
+		"foto" : "hato-mayor.png"
 	},
 	{
 		"provincia_id" : 31,
-		"provincia" : "Duarte"
+		"provincia" : "Duarte",
+		"foto" : "duarte.png"
 	},
 	{
 		"provincia_id" : 32,
-		"provincia" : "Samaná"
+		"provincia" : "Samaná",
+		"foto" : "samana.png"
 	},
 	{
 		"provincia_id" : 33,
-		"provincia" : "Maria Trinidad Sánchez"
+		"provincia" : "Maria Trinidad Sánchez",
+		"foto" : "maria-trinidad-sanchez.png"
 	},
 	{
 		"provincia_id" : 34,
-		"provincia" : "Salcedo"
+		"provincia" : "Salcedo",
+		"foto" : "salcedo.png"
 	},
 	{
 		"provincia_id" : 41,
-		"provincia" : "La Vega"
+		"provincia" : "La Vega",
+		"foto" : "la-vega.png"
 	},
 	{
 		"provincia_id" : 42,
-		"provincia" : "Monseñor Nouel"
+		"provincia" : "Monseñor Nouel",
+		"foto" : "monsenor-nouel.png"
 	},
 	{
 		"provincia_id" : 43,
-		"provincia" : "Sánchez Ramirez"
+		"provincia" : "Sánchez Ramirez",
+		"foto" : "sanchez-ramirez.png"
 	},
 	{
 		"provincia_id" : 51,
-		"provincia" : "Santiago"
+		"provincia" : "Santiago",
+		"foto" : "santiago.png"
 	},
 	{
 		"provincia_id" : 56,
-		"provincia" : "Espaillat"
+		"provincia" : "Espaillat",
+		"foto" : "espaillat.png"
 	},
 	{
 		"provincia_id" : 57,
-		"provincia" : "Puerto Plata"
+		"provincia" : "Puerto Plata",
+		"foto" : "puerto-plata.png"
 	},
 	{
 		"provincia_id" : 61,
-		"provincia" : "Valverde"
+		"provincia" : "Valverde",
+		"foto" : "valverde.png"
 	},
 	{
 		"provincia_id" : 62,
-		"provincia" : "Monte Cristi"
+		"provincia" : "Monte Cristi",
+		"foto" : "monte-cristi.png"
 	},
 	{
 		"provincia_id" : 63,
-		"provincia" : "Dajabónn"
+		"provincia" : "Dajabón",
+		"foto" : "dajabon.png"
 	},
 	{
 		"provincia_id" : 64,
-		"provincia" : "Santiago Rodríguez"
+		"provincia" : "Santiago Rodríguez",
+		"foto" : "santiago-rodriguez.png"
 	},
 	{
 		"provincia_id" : 71,
-		"provincia" : "Azua"
+		"provincia" : "Azua",
+		"foto" : "azua.png"
 	},
 	{
 		"provincia_id" : 72,
-		"provincia" : "San Juan"
+		"provincia" : "San Juan",
+		"foto" : "san-juan.png"
 	},
 	{
 		"provincia_id" : 73,
-		"provincia" : "Elías Piña"
+		"provincia" : "Elías Piña",
+		"foto" : "elias-pina.png"
 	},
 	{
 		"provincia_id" : 81,
-		"provincia" : "Barahona"
+		"provincia" : "Barahona",
+		"foto" : "barahona.png"
 	},
 	{
 		"provincia_id" : 82,
-		"provincia" : "Bahoruco"
+		"provincia" : "Bahoruco",
+		"foto" : "bahoruco.png"
 	},
 	{
 		"provincia_id" : 83,
-		"provincia" : "Independencia"
+		"provincia" : "Independencia",
+		"foto" : "independencia.png"
 	},
 	{
 		"provincia_id" : 84,
-		"provincia" : "Perdenales"
+		"provincia" : "Pedernales",
+		"foto" : "pedernales.png"
 	},
 	{
 		"provincia_id" : 91,
-		"provincia" : "San Cristóbal"
+		"provincia" : "San Cristóbal",
+		"foto" : "san-cristobal.png"
 	},
 	{
 		"provincia_id" : 92,
-		"provincia" : "Monte Plata"
+		"provincia" : "Monte Plata",
+		"foto" : "monte-plata.png"
 	},
 	{
 		"provincia_id" : 93,
-		"provincia" : "San José de Ocoa"
+		"provincia" : "San José de Ocoa",
+		"foto" : "san-jose-de-ocoa.png"
 	},
 	{
 		"provincia_id" : 94,
-		"provincia" : "Peravia"
+		"provincia" : "Peravia",
+		"foto" : "peravia.png"
 	}
 ]
