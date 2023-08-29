@@ -14,7 +14,7 @@
     </style>
 </head>
 <body>
-  <h1 style="opacity: 100%; border-style: none; background-image: url('./fotos-proyecto/bandera-r-d.png'); background-repeat: no-repeat; height:120px; width:70%;">
+  <h1 style="opacity: 100%;  background-image: url('./fotos-proyecto/bandera-r-d.png'); background-repeat: no-repeat; height:120px; width:100%;">
     <span style="opacity: 75%;">Visita</span>
     <br>
     <span style="opacity: 75%; color:blue;">República</span>
@@ -22,7 +22,7 @@
     <span style="opacity: 75%; color:red;">Dominicana.</span>
   </h1>
   <form >
-    <fieldset >
+    <fieldset style="border: none;" >
       <legend style="font-size: 26px;">Buscar:</legend>
       <!--<label for="city">Dirección:</label>-->
       <select onchange="getId()" id="city" name="city" required ></select>
@@ -41,6 +41,7 @@
      
       function getIdSector(){
         const idMunicipio = document.getElementById('municipio').value;
+        const municipioQuery = document.querySelector('#municipio').value;
         console.log(idMunicipio);
         const SECTOR_DATA = './JSON/sectores.json';
         const selectSectores = document.querySelector("#sector");
@@ -52,10 +53,14 @@
             const HTMLResponseSector = sectores.map((element, x) => 
             (element.municipio_id == idMunicipio)
             ?
-            '<option name= '+element.sector+' id='+element.provincia_id+' >'+element.sector+'</option>'
+            //dir.append(element.sector)+
+            
+            '<option name='+  element.sector+' id='+element.provincia_id+' >'+element.sector+'</option>'
             :
             ''
           );
+         // dir.append(municipioQuery) += dir.append(municipioQuery); 
+
           ir.className = "select-visible";
           selectSectores.className = "select-visible";
           selectSectores.innerHTML = HTMLResponseSector;
@@ -97,8 +102,8 @@
             const HTMLResponseMuni = provincias.map((element, x) => 
             (element.provincia_id == idCiudad )
             ?
-            dir.innerHTML = element.provincia+
-            '<img src="./fotos-proyecto/fotos-provincias/'+element.foto+'" alt="foto" height="50%" width="100%" />'
+            dir.innerHTML = '<p style="font-size:18px;"><u>'+element.provincia+'</u> - R.D.</p>' +
+            '<a href="./fotos-proyecto/fotos-provincias/'+element.foto+'"><img src="./fotos-proyecto/fotos-provincias/'+element.foto+'" alt="foto" height="auto" width="100%" /></a>'
             :
             ''
           );
