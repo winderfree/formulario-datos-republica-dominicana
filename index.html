@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visita República Dominicana.</title>
     <style>
+      fieldset {
+        margin: 7px;
+
+      }
+      fieldset select {
+        font-size: 16px;
+        color: rgb(234, 236, 241);
+        margin: 12px;
+        padding-left: 32px;
+        height: 33px;
+        background-color: rgb(240, 80, 26);
+        border-radius: 50px;
+        cursor: pointer;
+        
+      }
+      fieldset select:hover {
+        font-size: 16px;
+        color: rgb(3, 9, 25);
+        margin: 12px;
+        padding-left: 32px;
+        height: 33px;
+        background-color: rgb(234, 223, 216);
+        border-radius: 50px;
+        cursor: pointer;
+
+      }
       .select-hidden {
         display: none;
       }
@@ -30,7 +56,16 @@
       <select class="select-hidden" onchange="getIdSector()" id="municipio" name="municipio" required></select>
       <!--<label for="sector">Sector:</label>-->
       <select class="select-hidden" id="sector" name="sector"></select>
-      <button class="select-hidden" id="boton-ir" type="submit" onclick="alert('Up to YOU!')">Ir</button>
+      <br>
+      <button class="select-hidden" id="boton-ir" type="submit" onclick="alert('Up to YOU!');" style="background-image: url('./fotos-proyecto/fotos-botones/boton-reload.png');background-repeat:no-repeat; 
+      margin: 4px;
+      height:60px;
+      width:60px;
+      border: none;
+      border-radius: 50px;
+      background-blend-mode: darken;
+      cursor: pointer;
+      " ></button>
      
   </fieldset>
   <div id="descripcion-direccion"></div>
@@ -110,7 +145,7 @@
             dir.className = "select-visible";
           myArrayClean = HTMLResponseMuni.filter(Boolean);
           console.log(myArrayClean);
-          foto.innerHTML =  myArrayClean;
+          //foto.append(myArrayClean);
         });  
       }
 
