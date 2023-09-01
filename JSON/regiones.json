@@ -1,0 +1,21 @@
+[
+    {
+        "Cibao": [
+        {
+            "numeroRegion": 1,
+            "regionesDeDesarrollo": "Cibao Norte",
+            "provincias": ["Espaillat", "Puerto Plata", "Santiago"]
+        },
+        {
+            "numeroRegion": 2,
+            "regionesDeDesarrollo": "Cibao Sur",
+            "provincias": ["La Vega", "Monseñor Nouel", "Sánchez Ramírez"]
+        },
+        {
+            "numeroRegion": 3,
+            "regionesDeDesarrollo": "Cibao Nordeste",
+            "provincias": ["Duarte", "Hermanas Mirabal", "María Trinidad Sánchez", "Samaná"]
+        }
+        ]
+    }
+]

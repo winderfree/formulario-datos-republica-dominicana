@@ -2,161 +2,353 @@
 	{
 		"provincia_id" : 1,
 		"provincia" : "Distrito Nacional",
-		"foto" : "distrito-nacional.png"
+		"foto" : "distrito-nacional.png",
+		"regiones_desarrollo": "Ozama",
+		"numero_region": 10,
+		"macro_region":"Oriental o Este",
+		"poblacion": 965040 ,
+		"porcentaje": 10.2 ,
+		"densidad": 10535.37  
 	},
 	{
 		"provincia_id" : 2,
 		"provincia" : "Santo Domingo",
-		"foto" : "santo-domingo.png"
+		"foto" : "santo-domingo.png",
+		"regiones_desarrollo": "Ozama",
+		"numero_region": 10,
+		"macro_region":"Oriental o Este",
+		"poblacion": 2374370 ,
+		"porcentaje": 25.1 ,
+		"densidad": 1302.20  
 	},
 	{
 		"provincia_id" : 21,
 		"provincia" : "San Pedro de Macorís",
-		"foto" : "san-pedro-de-macoris.png"
+		"foto" : "san-pedro-de-macoris.png",
+		"regiones_desarrollo": "Higuamo",
+		"numero_region": 9,
+		"macro_region":"Oriental o Este",
+		"poblacion": 290458 ,
+		"porcentaje": 3.1 ,
+		"densidad": 231.57 
 	},
 	{
 		"provincia_id" : 22,
 		"provincia" : "La Romana",
-		"foto" : "la-romana.png"
+		"foto" : "la-romana.png",
+		"regiones_desarrollo": "Yuma",
+		"numero_region": 8,
+		"macro_region":"Oriental o Este",
+		"poblacion": 245433 ,
+		"porcentaje": 2.6 ,
+		"densidad": 376.37 
 	},
 	{
 		"provincia_id" : 23,
 		"provincia" : "La Altagracia",
-		"foto" : "la-altagracia.png"
+		"foto" : "la-altagracia.png",
+		"regiones_desarrollo": "Yuma",
+		"numero_region": 8,
+		"macro_region":"Oriental o Este",
+		"poblacion": 273.210 ,
+		"porcentaje": 2.9 ,
+		"densidad": 91.12 
 	},
 	{
 		"provincia_id" : 24,
 		"provincia" : "El Seibo",
-		"foto" : "el-seibo.png"
+		"foto" : "el-seibo.png",
+		"regiones_desarrollo": "Yuma",
+		"numero_region": 8,
+		"macro_region":"Oriental o Este",
+		"poblacion": 87680 ,
+		"porcentaje": 0.9 ,
+		"densidad": 249.03
 	},
 	{
 		"provincia_id" : 25,
 		"provincia" : "Hato Mayor",
-		"foto" : "hato-mayor.png"
+		"foto" : "hato-mayor.png",
+		"regiones_desarrollo": "Higuamo",
+		"numero_region": 9,
+		"macro_region":"Oriental o Este",
+		"poblacion": 85017 ,
+		"porcentaje": 0.9 ,
+		"densidad": 64.44
 	},
 	{
 		"provincia_id" : 31,
 		"provincia" : "Duarte",
-		"foto" : "duarte.png"
+		"foto" : "duarte.png",
+		"regiones_desarrollo": "Cibao Nordeste",
+		"numero_region": 3,
+		"macro_region":"Cibao",
+		"poblacion": 289574 ,
+		"porcentaje": 3.1 ,
+		"densidad": 175.55 
 	},
 	{
 		"provincia_id" : 32,
 		"provincia" : "Samaná",
-		"foto" : "samana.png"
+		"foto" : "samana.png",
+		"regiones_desarrollo": "Cibao Nordeste",
+		"numero_region": 3,
+		"macro_region":"Cibao",
+		"poblacion": 101494 ,
+		"porcentaje": 1.1 ,
+		"densidad": 117.63 
 	},
 	{
 		"provincia_id" : 33,
 		"provincia" : "Maria Trinidad Sánchez",
-		"foto" : "maria-trinidad-sanchez.png"
+		"foto" : "maria-trinidad-sanchez.png",
+		"regiones_desarrollo": "Cibao Nordeste",
+		"numero_region": 3,
+		"macro_region":"Cibao",
+		"poblacion": 140925 ,
+		"porcentaje": 1.5 ,
+		"densidad": 116.80 
 	},
 	{
 		"provincia_id" : 34,
 		"provincia" : "Salcedo",
-		"foto" : "salcedo.png"
+		"foto" : "salcedo.png",
+		"regiones_desarrollo": "None",
+		"numero_region": "None",
+		"macro_region":"None",
+		"poblacion": 0 ,
+		"porcentaje": 0 ,
+		"densidad": 0 
 	},
 	{
 		"provincia_id" : 41,
 		"provincia" : "La Vega",
-		"foto" : "la-vega.png"
+		"foto" : "la-vega.png",
+		"regiones_desarrollo": "Cibao Sur",
+		"numero_region": 2,
+		"macro_region":"Cibao",
+		"poblacion": 394205 ,
+		"porcentaje": 4.2 ,
+		"densidad": 171.95 
 	},
 	{
 		"provincia_id" : 42,
 		"provincia" : "Monseñor Nouel",
-		"foto" : "monsenor-nouel.png"
+		"foto" : "monsenor-nouel.png",
+		"regiones_desarrollo": "Cibao Sur",
+		"numero_region": 2,
+		"macro_region":"Cibao",
+		"poblacion": 165224 ,
+		"porcentaje": 1.7 ,
+		"densidad": 166.56 
 	},
 	{
 		"provincia_id" : 43,
 		"provincia" : "Sánchez Ramirez",
-		"foto" : "sanchez-ramirez.png"
+		"foto" : "sanchez-ramirez.png",
+		"regiones_desarrollo": "Cibao Sur",
+		"numero_region": 2,
+		"macro_region":"Cibao",
+		"poblacion": 151392 ,
+		"porcentaje": 1.6 ,
+		"densidad": 127.67 
 	},
 	{
 		"provincia_id" : 51,
 		"provincia" : "Santiago",
-		"foto" : "santiago.png"
+		"foto" : "santiago.png",
+		"regiones_desarrollo": "Cibao Norte",
+		"numero_region": 1,
+		"macro_region":"Cibao",
+		"poblacion": 963422 ,
+		"porcentaje": 10.2 ,
+		"densidad": 343.31 
 	},
 	{
 		"provincia_id" : 56,
 		"provincia" : "Espaillat",
-		"foto" : "espaillat.png"
+		"foto" : "espaillat.png",
+		"regiones_desarrollo": "Cibao Norte",
+		"numero_region": 1,
+		"macro_region":"Cibao",
+		"poblacion": 231938 ,
+		"porcentaje": 2.5 ,
+		"densidad": 275.13 
 	},
 	{
 		"provincia_id" : 57,
 		"provincia" : "Puerto Plata",
-		"foto" : "puerto-plata.png"
+		"foto" : "puerto-plata.png",
+		"regiones_desarrollo": "Cibao Norte",
+		"numero_region": 1,
+		"macro_region":"Cibao",
+		"poblacion": 321597 ,
+		"porcentaje": 3.4 ,
+		"densidad": 178.11 
 	},
 	{
 		"provincia_id" : 61,
 		"provincia" : "Valverde",
-		"foto" : "valverde.png"
+		"foto" : "valverde.png",
+		"regiones_desarrollo": "Cibao Noroeste",
+		"numero_region": 4,
+		"macro_region":"Cibao",
+		"poblacion": 163030 ,
+		"porcentaje": 1.7 ,
+		"densidad": 198.09 
 	},
 	{
 		"provincia_id" : 62,
 		"provincia" : "Monte Cristi",
-		"foto" : "monte-cristi.png"
+		"foto" : "monte-cristi.png",
+		"regiones_desarrollo": "Cibao Noroeste",
+		"numero_region": 4,
+		"macro_region":"Cibao",
+		"poblacion": 109607 ,
+		"porcentaje": 1.2 ,
+		"densidad": 58.12 
 	},
 	{
 		"provincia_id" : 63,
 		"provincia" : "Dajabón",
-		"foto" : "dajabon.png"
+		"foto" : "dajabon.png",
+		"regiones_desarrollo": "Cibao Noroeste",
+		"numero_region": 4,
+		"macro_region":"Cibao",
+		"poblacion": 63955 ,
+		"porcentaje": 0.7 ,
+		"densidad": 62.62 
 	},
 	{
 		"provincia_id" : 64,
 		"provincia" : "Santiago Rodríguez",
-		"foto" : "santiago-rodriguez.png"
+		"foto" : "santiago-rodriguez.png",
+		"regiones_desarrollo": "Cibao Noroeste",
+		"numero_region": 4,
+		"macro_region":"Cibao",
+		"poblacion": 57476 ,
+		"porcentaje": 0.6 ,
+		"densidad": 50.09 
 	},
 	{
 		"provincia_id" : 71,
 		"provincia" : "Azua",
-		"foto" : "azua.png"
+		"foto" : "azua.png",
+		"regiones_desarrollo": "Valdesia",
+		"numero_region": 5,
+		"macro_region":"Sur",
+		"poblacion": 214311 ,
+		"porcentaje": 2.3 ,
+		"densidad": 79.89 
 	},
 	{
 		"provincia_id" : 72,
 		"provincia" : "San Juan",
-		"foto" : "san-juan.png"
+		"foto" : "san-juan.png",
+		"regiones_desarrollo": "El Valle",
+		"numero_region": 6,
+		"macro_region":"Sur",
+		"poblacion": 232333 ,
+		"porcentaje": 2.5 ,
+		"densidad": 69.07 
 	},
 	{
 		"provincia_id" : 73,
 		"provincia" : "Elías Piña",
-		"foto" : "elias-pina.png"
+		"foto" : "elias-pina.png",
+		"regiones_desarrollo": "El Valle",
+		"numero_region": 6,
+		"macro_region":"Sur",
+		"poblacion": 63029 ,
+		"porcentaje": 0.7 ,
+		"densidad": 45.17 
 	},
 	{
 		"provincia_id" : 81,
 		"provincia" : "Barahona",
-		"foto" : "barahona.png"
+		"foto" : "barahona.png",
+		"regiones_desarrollo": "Enriquillo",
+		"numero_region": 7,
+		"macro_region":"Sur",
+		"poblacion": 187105 ,
+		"porcentaje": 2.0 ,
+		"densidad": 112.70 
 	},
 	{
 		"provincia_id" : 82,
 		"provincia" : "Bahoruco",
-		"foto" : "bahoruco.png"
+		"foto" : "bahoruco.png",
+		"regiones_desarrollo": "Enriquillo",
+		"numero_region": 7,
+		"macro_region":"Sur",
+		"poblacion": 97313 ,
+		"porcentaje": 1.0 ,
+		"densidad": 75.74 
 	},
 	{
 		"provincia_id" : 83,
 		"provincia" : "Independencia",
-		"foto" : "independencia.png"
+		"foto" : "independencia.png",
+		"regiones_desarrollo": "Enriquillo",
+		"numero_region": 7,
+		"macro_region":"Sur",
+		"poblacion": 52589 ,
+		"porcentaje": 0.6 ,
+		"densidad": 26.20 
 	},
 	{
 		"provincia_id" : 84,
 		"provincia" : "Pedernales",
-		"foto" : "pedernales.png"
+		"foto" : "pedernales.png",
+		"regiones_desarrollo": "Enriquillo",
+		"numero_region": 7,
+		"macro_region":"Sur",
+		"poblacion": 31587 ,
+		"porcentaje": 0.3 ,
+		"densidad": 15.18 
 	},
 	{
 		"provincia_id" : 91,
 		"provincia" : "San Cristóbal",
-		"foto" : "san-cristobal.png"
+		"foto" : "san-cristobal.png",
+		"regiones_desarrollo": "Valdesia",
+		"numero_region": 5,
+		"macro_region":"Sur",
+		"poblacion": 569930 ,
+		"porcentaje": 6.0 ,
+		"densidad": 459.40 
 	},
 	{
 		"provincia_id" : 92,
 		"provincia" : "Monte Plata",
-		"foto" : "monte-plata.png"
+		"foto" : "monte-plata.png",
+		"regiones_desarrollo": "Higuamo",
+		"numero_region": 9,
+		"macro_region":"Oriental o Este",
+		"poblacion": 185956 ,
+		"porcentaje": 2.0 ,
+		"densidad": 71.48
 	},
 	{
 		"provincia_id" : 93,
 		"provincia" : "San José de Ocoa",
-		"foto" : "san-jose-de-ocoa.png"
+		"foto" : "san-jose-de-ocoa.png",
+		"regiones_desarrollo": "Valdesia",
+		"numero_region": 5,
+		"macro_region":"Sur",
+		"poblacion": 59544 ,
+		"porcentaje": 0.6 ,
+		"densidad": 69.77 
 	},
 	{
 		"provincia_id" : 94,
 		"provincia" : "Peravia",
-		"foto" : "peravia.png"
+		"foto" : "peravia.png",
+		"regiones_desarrollo": "Valdesia",
+		"numero_region": 5,
+		"macro_region":"Sur",
+		"poblacion": 184344 ,
+		"porcentaje": 2.0 ,
+		"densidad": 234.77 
 	}
 ]
