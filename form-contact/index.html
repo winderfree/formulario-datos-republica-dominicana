@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Iconos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <!--Mi estilo-->
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+  <style>
+    textarea.form-control {
+      margin: 4px;
+      padding: 12px;
+    }
+    div.form-group {
+      width: auto;
+    }
+    fieldset legend {
+      margin: 22px 2px -10px 4px;
+    }
+
+    fieldset {
+      margin-left: 24px;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+
+    }
+
+    fieldset select {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      margin: 4px;
+      padding-left: 12px;
+      height: 33px;
+      width: 96%;
+      background-color: rgb(255, 0, 0);
+      border-radius: 50px;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    fieldset select:hover {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 18px;
+      font-weight: bold;
+      color: rgb(3, 9, 25);
+      margin: 4px;
+      padding-left: 12px;
+      width: 96%;
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+      border-radius: 50px;
+      cursor: pointer;
+
+    }
+
+    .select-hidden {
+      display: none;
+    }
+
+    .select-visible {
+      display: inline;
+    }
+
+    .title_letters {
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      font-size: 12px;
+      padding: 22px 4px 0px 44px;
+      opacity: 100%;
+      background-image: url('../fotos-proyecto/bandera-r-d.png');
+      background-repeat: no-repeat;
+      height: 118px;
+      width: 100%;
+    }
+
+    .span_title_letters {
+      color: rgb(12, 1, 5);
+    }
+
+    .botones-redes {
+      font-size: 26px;
+      border: none;
+      border-radius: 50px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-ligth">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+          aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <p style=" font-size: 18px; font-weight: bolder; margin: 12px; font-family: 'Courier New', Courier, monospace;"
+            class="nav-item rounded-circle" src="/imagenes/icono.svg" width="50" alt="Logo de la página web">
+            Visita República Dominicana.
+          </p>
+          <div class="nav-item">
+            <button class="botones-redes" style="background-color: rgb(78, 168, 87);" type="button">
+              <a class="" href="../index.html" target="_parent" rel="noopener noreferrer">
+                <i style="color: whitesmoke;" class="bi bi-house "></i>
+              </a>
+            </button>
+            
+            <button class="botones-redes" style="background-color: rgb(220, 53, 11);" type="button">
+              <a class="" href="./form-contact/" target="_parent" rel="noopener noreferrer">
+                <i style="color: whitesmoke;" class="bi bi-envelope "></i>
+              </a>
+            </button>
+
+            <button class="botones-redes" style=" background-color: rgb(13, 24, 15);" type="button">
+              <a class="" href="https://github.com/winderfree/formulario-datos-republica-dominicana" target="_blank">
+                <i style=" color: whitesmoke;" class="bi bi-github"></i>
+              </a>
+            </button>
+            <button class="botones-redes" style=" background-color: rgb(62, 84, 209);" type="button">
+              <a class="" href="https://www.facebook.com/john0096" target="_blank">
+                <i style="color: whitesmoke;" class="bi bi-facebook "></i>
+              </a>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+    <div class="title_letters" style="opacity: 75%;">
+      <span class="span_title_letters">Visita</span>
+      <br>
+      <span class="span_title_letters">República</span>
+      <br>
+      <span class="span_title_letters">Dominicana.</span>
+    </div>
+    <h1>Contáctanos!</h1>
+    <form target="_parent" action="https://formsubmit.co/49aec1a31fab4870c3e4f33d3f51f091" method="POST">
+      <div class="form-group">
+        <div class="form-row">
+          <div class="col">
+            <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+          </div>
+          <div class="col">
+            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+      <input type="hidden" name="_subject" value="Página Visita RD!">
+      <input type="hidden" name="_blacklist" value="spammy pattern, banned term, phrase">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_autoresponse" value="Thanks for contact us!, we'll be in touch as soon as we can!.">
+      <input type="hidden" name="_template" value="table">
+    </form>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
